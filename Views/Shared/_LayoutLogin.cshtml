@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Login</title>
+    <style>
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .btn-group-inline{
+            display :inline;
+            align-content : center
+        }
+        .btn{
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #52565b;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            border-radius: 0px;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, 
+            border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+            .input-group label,
+            .input-group textarea {
+                width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+    </header>
+
+    <div class="center-container">
+        <div class="input-group">
+            <label>Tên Đăng Nhập</label>
+            <textarea></textarea>
+        </div>
+        <div class="input-group">
+            <label>Mật Khẩu</label>
+            <textarea></textarea>
+        </div>
+        <div class="btn btn-group-inline">
+                <button class="btn-info">Đăng Nhập</button>
+                <button class="btn-info">Đăng Ký</button>
+        </div>
+        @RenderBody() <!-- Ensure RenderBody is called to display the content of child views -->
+    </div>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
